@@ -63,10 +63,16 @@
                           <li>
                             <a href="{{ url_for('categories') }}">Categories</a>
                           </li>
-                          <li><a href="{{ url_for('product') }}">Product</a></li>
+                          <li>
+                            <a href="{{ url_for('product') }}">Product</a>
+                          </li>
                           <li><a href="{{ url_for('cart') }}">Cart</a></li>
-                          <li><a href="{{ url_for('checkout') }}">Check out</a></li>
-                          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                          <li>
+                            <a href="{{ url_for('checkout') }}">Check out</a>
+                          </li>
+                          <li>
+                            <a href="{{ url_for('contact') }}">Contact</a>
+                          </li>
                         </ul>
                       </li>
                       <li class="hassubs">
@@ -201,7 +207,8 @@
           </ul>
         </div>
       </header>
-      {% block content %} {% endblock %}
+      {% block content %} 
+      {% endblock %}
       <!-- Footer -->
 
       <div class="footer_overlay"></div>
